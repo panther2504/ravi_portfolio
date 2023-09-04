@@ -1,0 +1,628 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --heading-font: 40pt;
+  --heading-font-weight: 700;
+  --title-font-size: 24pt;
+  --title-font-weight: 700;
+  --content-font-size: 14pt;
+}
+html {
+  min-width: 320px !important;
+}
+* {
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: rgba(128, 32, 255, 0.05);
+  scroll-behavior: smooth;
+  overflow-x: hidden !important;
+}
+
+.nav-Bg {
+  background-image: linear-gradient(
+    to right,
+    rgb(5, 117, 230),
+    rgb(2, 27, 121)
+  );
+  box-shadow: 0px -2px 12px black;
+}
+.navbar {
+  background-color: transparent !important;
+}
+
+.navbar-brand {
+  color: white;
+  font-size: 18pt;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+.nav-link {
+  color: white;
+  font-weight: 400;
+  letter-spacing: 1px;
+  transition: .03s;
+  position: relative;
+}
+.nav-link:hover {
+  color: white !important;
+}
+.nav-link::after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  border-radius: 10px;
+  background-image: linear-gradient(
+    to right,
+    rgb(220, 227, 91),
+    rgb(69, 182, 73)
+  );
+  position: absolute;
+  left: 0px;
+  bottom: 5px;
+  transform: scale(0) !important;
+  transition: 0.3s;
+}
+.nav-link:hover::after {
+  transition: 0.3s;
+  transform-origin: center;
+  transform: scale(1) !important;
+}
+.prf {
+  margin-top: 100px;
+}
+.profile p {
+  line-height: 55px;
+  font-size: var(--heading-font);
+  font-weight: var(--heading-font-weight);
+}
+.cv {
+  color: white;
+  background-image: linear-gradient(
+    to left,
+    rgb(5, 117, 230),
+    rgb(3, 32, 136)
+  ) !important;
+}
+.profile-photo {
+  height: 450px;
+}
+.name-welcome,
+.role {
+  font-size: 26pt !important;
+  color: #535252;
+}
+.about,
+.skills,
+.projects-title,
+.contact-title,
+.footer {
+  margin-top: 100px;
+}
+.about-title,
+.skills-title,
+.projects-title,
+.contact-title {
+  font-size: var(--title-font-size);
+  font-weight: var(--title-font-weight);
+}
+.about-image {
+  height: 380px;
+}
+.abtname,
+.skill-heading {
+  font-size: 20pt;
+  font-weight: 700;
+}
+.about-info {
+  font-size: var(--content-font-size);
+}
+.skill-columns {
+  row-gap: 50px;
+}
+.skill-list {
+  width: 160px;
+  height: 160px;
+  position: relative;
+}
+.outer {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  padding: 20px;
+  box-shadow: 4px 4px 12px -1px rgba(0, 0, 0, 0.2);
+}
+.inner {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+    inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+    -0.5px -0.5px 0px rgba(255, 255, 255, 1);
+}
+#number {
+  font-size: 14pt;
+  font-weight: 600;
+}
+circle {
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 20px;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
+  animation: anim 2s linear forwards;
+}
+.circle1 {
+  fill: none;
+  stroke: url(#GradientColor1);
+  stroke-width: 20px;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
+  animation: anim 2s linear forwards;
+}
+svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.circle-css {
+  animation: animcss 2s linear forwards;
+}
+.circle-js {
+  animation: animjs 2s linear forwards;
+}
+.circle-csharp {
+  animation: animcsharp 2s linear forwards;
+}
+.circle-sql {
+  animation: animsql 2s linear forwards;
+}
+.circle-asp {
+  animation: animasp 2s linear forwards;
+}
+.circle-bootstrap {
+  animation: animboot 2s linear forwards;
+}
+.circle-ps {
+  animation: animps 2s linear forwards;
+}
+.circle-ai {
+  animation: animai 2s linear forwards;
+}
+.circle-git {
+  animation: animgit 2s linear forwards;
+}
+@keyframes anim {
+  100% {
+    stroke-dashoffset: 94.4;
+  }
+}
+@keyframes animcss {
+  100% {
+    stroke-dashoffset: 202;
+  }
+}
+@keyframes animjs {
+  100% {
+    stroke-dashoffset: 254;
+  }
+}
+@keyframes animcsharp {
+  100% {
+    stroke-dashoffset: 174;
+  }
+}
+@keyframes animsql {
+  100% {
+    stroke-dashoffset: 94;
+  }
+}
+@keyframes animasp {
+  100% {
+    stroke-dashoffset: 149;
+  }
+}
+@keyframes animboot {
+  100% {
+    stroke-dashoffset: 222;
+  }
+}
+@keyframes animps {
+  100% {
+    stroke-dashoffset: 83;
+  }
+}
+@keyframes animai {
+  100% {
+    stroke-dashoffset: 106;
+  }
+}
+@keyframes animgit {
+  100% {
+    stroke-dashoffset: 314;
+  }
+}
+
+.projects {
+  width: 280px;
+  height: 350px;
+  cursor: pointer;
+  margin: 5rem 0;
+  border-radius: 10px;
+  perspective: 800px;
+}
+
+.projects:hover > .card {
+  transform: rotateY(180deg) rotateZ(180deg);
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #999;
+  transition: transform 1500ms;
+  transform-style: preserve-3d;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.front,
+.back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.top img {
+  width: 100%;
+  height: 100%;
+}
+
+.back {
+  /* background: #3a3a3a; */
+  transform: rotateY(180deg) rotateZ(180deg);
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  flex-direction: column;
+  font-size: 15px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.back h1 {
+  letter-spacing: 0.3rem;
+  background: linear-gradient(to right, #485563, #29323c);
+  color: #f5f5f5;
+  font-weight: 900;
+  flex-basis: 20%;
+  padding-top: 20px;
+}
+
+.back p {
+  padding-bottom: 2.8rem;
+  background: #7b8e94;
+  flex-basis: 75%;
+  padding-top: 20px;
+}
+
+.wrapper {
+  min-width: 300px;
+  max-width: 500px;
+  margin: auto;
+  padding: 20px 10px;
+  background-color: hsl(207, 48%, 95%);
+  border-radius: 15px;
+  box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #fff;
+}
+
+.logo {
+  width: 80px;
+  margin: auto;
+}
+
+.logo img {
+  width: 100%;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0px 0px 3px #5f5f5f, 0px 0px 0px 5px #ecf0f3, 8px 8px 15px #a7aaa7,
+    -8px -8px 15px #fff;
+}
+
+.wrapper .name {
+  font-weight: 600;
+  font-size: 1.4rem;
+  letter-spacing: 1.3px;
+  padding-left: 10px;
+  color: #555;
+}
+
+.wrapper .form-field input,
+textarea {
+  width: 100%;
+  display: block;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.2rem;
+  color: #0752dc;
+  font-weight: 500;
+  padding: 10px 15px 10px 10px;
+  /* border: 1px solid red; */
+}
+
+.wrapper .form-field {
+  padding-left: 10px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #fff;
+}
+
+.wrapper .form-field .fas {
+  color: #555;
+}
+
+.wrapper .btn {
+  box-shadow: none;
+  width: 100%;
+  height: 40px;
+  background-image: linear-gradient(
+    to right,
+    rgb(52, 57, 155),
+    rgb(112, 119, 249)
+  );
+  font-size: 14pt;
+  color: #fff;
+  border-radius: 25px;
+  box-shadow: 3px 3px 3px #b1b1b1, -3px -3px 3px #fff;
+  letter-spacing: 1.3px;
+}
+
+.wrapper a {
+  text-decoration: none;
+  font-size: 0.8rem;
+  color: #03a9f4;
+}
+.msg-box {
+  font-size: 12pt;
+}
+
+.footer {
+  padding: 20px 0px;
+  padding-bottom: 50px;
+
+  background-image: linear-gradient(
+    109.4deg,
+    rgb(69, 127, 202) 3.6%,
+    rgb(23, 77, 145) 94.9%
+  );
+}
+.footer-name {
+  font-size: 20pt;
+  color: white;
+  letter-spacing: 3px;
+}
+.smedia-container {
+  column-gap: 50px;
+}
+.smda {
+  padding: 0 20px;
+  color: White;
+  transition: 0.3s;
+  animation-timing-function: ease;
+}
+.smda:hover {
+  transform: scale(1.3);
+  transition: 0.3s;
+  animation-timing-function: ease;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+@media (max-width: 380px) {
+  .wrapper {
+    margin: 30px 20px;
+    padding: 40px 15px 15px 15px;
+  }
+}
+/* Media Query */
+
+@media screen and (min-width: 1200px) {
+  .left-side p {
+    font-size: 34pt !important;
+    line-height: 50px;
+  }
+  .profile-photo {
+    height: 500px;
+  }
+  .about-image {
+    height: 300px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .left-side {
+    padding: 0;
+    margin: 0;
+  }
+  .role,
+  .name-welcome {
+    font-size: 14pt !important;
+    margin: 0px !important;
+  }
+  .name-title {
+    font-size: 26pt !important;
+    margin: 0px !important;
+  }
+  .profile-photo {
+    height: 300px;
+  }
+  .buttons {
+    margin-top: 15px !important;
+  }
+  .about-image {
+    height: 250px;
+  }
+  .abtname {
+    font-size: 16pt;
+  }
+  .about-info {
+    font-size: 12pt;
+  }
+  .projects {
+    height: 270px !important;
+  }
+
+  .about-title,
+  .skills-title,
+  .projects-title,
+  .contact-title,
+  .skill-heading {
+    font-size: 18pt;
+  }
+}
+@media screen and (max-width: 768px) {
+  .navbar-nav {
+    margin: 0 !important;
+    padding: 7.5px 15px !important;
+  }
+  .left-side {
+    padding: 0;
+    margin: 0;
+  }
+  .role,
+  .name-welcome {
+    font-size: 14pt !important;
+    margin: 0px !important;
+    height: 40px;
+  }
+  .name-title {
+    font-size: 20pt !important;
+    margin: 0px !important;
+    height: 40px;
+  }
+  .profile-photo {
+    height: 250px;
+  }
+  .buttons {
+    margin-top: 15px !important;
+  }
+  .cv {
+    width: 170px;
+    height: 40px;
+    font-size: 12pt;
+    padding: 0 !important;
+    padding-top: 7px !important;
+    margin: 0;
+  }
+
+  .about-image {
+    height: 200px;
+  }
+  .abtname {
+    font-size: 12pt;
+  }
+  .about-info {
+    font-size: 10pt;
+  }
+  .projects {
+    height: 270px !important;
+  }
+  .projects:hover {
+    height: 270px !important;
+  }
+  .about-title,
+  .skills-title,
+  .projects-title,
+  .contact-title,
+  .skill-heading {
+    font-size: 14pt;
+  }
+}
+@media screen and (max-width: 576px) {
+  .navbar-nav {
+    margin: 0 !important;
+    padding: 7.5px 15px !important;
+  }
+  .navbar-brand {
+    font-size: 12pt;
+  }
+
+  .left-side {
+    padding: 0;
+    margin: 0;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
+  .prf-photo {
+    order: -1;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  .role,
+  .name-welcome {
+    font-size: 14pt !important;
+    margin: 0px !important;
+    height: 40px;
+  }
+  .name-title {
+    font-size: 20pt !important;
+    margin: 0px !important;
+    height: 40px;
+  }
+  .profile-photo {
+    height: 250px;
+  }
+  .buttons {
+    margin-top: 15px !important;
+  }
+  .cv {
+    width: 170px;
+    height: 40px;
+    font-size: 12pt;
+    padding: 0 !important;
+    padding-top: 7px !important;
+    margin: 0;
+  }
+  .skill-list {
+    transform: scale(0.8) !important;
+  }
+
+  .about-image {
+    height: 200px;
+  }
+  .abtname {
+    font-size: 12pt;
+  }
+  .about-info {
+    font-size: 10pt;
+  }
+  .projects {
+    height: 270px !important;
+  }
+
+  .wrapper input {
+    font-size: 12pt !important;
+  }
+  .about-title,
+  .skills-title,
+  .projects-title,
+  .contact-title,
+  .skill-heading {
+    font-size: 14pt;
+  }
+
+  html,
+  body {
+    overflow-x: hidden !important;
+  }
+}
